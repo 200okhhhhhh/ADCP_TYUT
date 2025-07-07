@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'H1ve',
-    description: 'D0g3 @ 道格安全研究实验室',
+    title: 'ADCP',
+    description: 'adcp平台',
     themeConfig: {
       // logo: '/assets/img/logo.png',
       nav: [
@@ -39,7 +39,7 @@ module.exports = {
       sidebarDepth: 2,
       smoothScroll: true,
       // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-      repo: 'https://github.com/D0g3-Lab/H1ve',
+      repo: '',
       // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
       // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
       repoLabel: 'GitHub',

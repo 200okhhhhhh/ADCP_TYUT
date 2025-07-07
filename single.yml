@@ -11,7 +11,7 @@ services:
     user: root
     restart: always
     ports:
-      - 8000:4000
+      - 80:4000
     environment:
       - UPLOAD_FOLDER=/var/uploads
       - DATABASE_URL=mysql+pymysql://root:ctfd@db/ctfd
@@ -34,7 +34,7 @@ services:
         ipv4_address: 10.2.0.10
 
   db:
-    image: mariadb:10.4
+    image: mariadb:10.4.12
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=ctfd
@@ -64,7 +64,7 @@ services:
     volumes:
       - ./frp:/conf/
     ports:
-      - 80:80
+      - 8000:8000
     entrypoint:
       - /app/frps
       - -c

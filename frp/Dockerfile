@@ -13,6 +13,6 @@ ENV PATH=$PATH:/app
 COPY --from=0 /go/src/github.com/fatedier/frp/bin/frp* /app/
 COPY . /conf
 RUN chmod +x /conf/run.sh
-EXPOSE 80
+EXPOSE 8000
 EXPOSE 7400
 # CMD ["/conf/run.sh"]
